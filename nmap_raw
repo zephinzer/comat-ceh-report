@@ -1,0 +1,166 @@
+
+Starting Nmap 7.25BETA2 ( https://nmap.org ) at 2016-12-19 20:40 EST
+NSE: Loaded 140 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:40
+Completed NSE at 20:40, 0.00s elapsed
+Initiating NSE at 20:40
+Completed NSE at 20:40, 0.00s elapsed
+Initiating ARP Ping Scan at 20:40
+Scanning 3 hosts [1 port/host]
+Completed ARP Ping Scan at 20:40, 0.24s elapsed (3 total hosts)
+Initiating Parallel DNS resolution of 3 hosts. at 20:40
+Completed Parallel DNS resolution of 3 hosts. at 20:40, 2.51s elapsed
+Nmap scan report for 192.168.108.207 [host down]
+Initiating SYN Stealth Scan at 20:40
+Scanning 2 hosts [1000 ports/host]
+Completed SYN Stealth Scan against 192.168.108.88 in 8.03s (1 host left)
+Discovered open port 49157/tcp on 192.168.108.15
+Discovered open port 2103/tcp on 192.168.108.15
+Increasing send delay for 192.168.108.15 from 0 to 5 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 192.168.108.15 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
+Discovered open port 49152/tcp on 192.168.108.15
+Discovered open port 5357/tcp on 192.168.108.15
+Discovered open port 9/tcp on 192.168.108.15
+Discovered open port 10243/tcp on 192.168.108.15
+Discovered open port 17/tcp on 192.168.108.15
+Discovered open port 13/tcp on 192.168.108.15
+Discovered open port 49158/tcp on 192.168.108.15
+Discovered open port 19/tcp on 192.168.108.15
+Discovered open port 7/tcp on 192.168.108.15
+Discovered open port 2869/tcp on 192.168.108.15
+Discovered open port 49153/tcp on 192.168.108.15
+Discovered open port 49155/tcp on 192.168.108.15
+Discovered open port 49154/tcp on 192.168.108.15
+Discovered open port 2107/tcp on 192.168.108.15
+Discovered open port 2105/tcp on 192.168.108.15
+Discovered open port 49156/tcp on 192.168.108.15
+Discovered open port 135/tcp on 192.168.108.15
+Discovered open port 21/tcp on 192.168.108.15
+Discovered open port 554/tcp on 192.168.108.15
+Discovered open port 3389/tcp on 192.168.108.15
+Discovered open port 139/tcp on 192.168.108.15
+Discovered open port 445/tcp on 192.168.108.15
+Discovered open port 80/tcp on 192.168.108.15
+Completed SYN Stealth Scan at 20:40, 37.51s elapsed (2000 total ports)
+Initiating Service scan at 20:40
+Scanning 25 services on 2 hosts
+Service scan Timing: About 56.00% done; ETC: 20:42 (0:00:42 remaining)
+Completed Service scan at 20:43, 141.15s elapsed (25 services on 2 hosts)
+Initiating OS detection (try #1) against 2 hosts
+Retrying OS detection (try #2) against 192.168.108.88
+NSE: Script scanning 2 hosts.
+Initiating NSE at 20:43
+Completed NSE at 20:44, 65.66s elapsed
+Initiating NSE at 20:44
+Completed NSE at 20:44, 1.02s elapsed
+Nmap scan report for 192.168.108.15
+Host is up (0.00048s latency).
+Not shown: 975 closed ports
+PORT      STATE SERVICE       VERSION
+7/tcp     open  echo
+9/tcp     open  discard?
+13/tcp    open  daytime       Microsoft Windows USA daytime
+17/tcp    open  qotd          Windows qotd (English)
+19/tcp    open  chargen
+21/tcp    open  ftp           FileZilla ftpd 0.9.30 beta
+80/tcp    open  http          Microsoft IIS httpd 7.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: IIS7
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Windows 7 Enterprise 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+554/tcp   open  rtsp?
+2103/tcp  open  msrpc         Microsoft Windows RPC
+2105/tcp  open  msrpc         Microsoft Windows RPC
+2107/tcp  open  msrpc         Microsoft Windows RPC
+2869/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+| ssl-cert: Subject: commonName=IE10Win7
+| Issuer: commonName=IE10Win7
+| Public Key type: rsa
+| Public Key bits: 2048.0
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2016-12-13T07:00:59
+| Not valid after:  2017-06-14T07:00:59
+| MD5:   3d72 d74b af57 40d9 5c5d 9cd7 1ea6 fa4b
+|_SHA-1: 32d6 aeaa 0431 b352 89b3 8964 69df 23bc 60ec c216
+|_ssl-date: 2016-12-20T01:51:55+00:00; +8m43s from scanner time.
+5357/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+10243/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+49157/tcp open  msrpc         Microsoft Windows RPC
+49158/tcp open  msrpc         Microsoft Windows RPC
+MAC Address: 08:00:27:FF:21:6D (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Microsoft Windows 7|2008|8.1
+OS CPE: cpe:/o:microsoft:windows_7::- cpe:/o:microsoft:windows_7::sp1 cpe:/o:microsoft:windows_server_2008::sp1 cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows_8.1
+OS details: Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, Windows 8, or Windows 8.1 Update 1
+Uptime guess: 0.602 days (since Mon Dec 19 06:18:05 2016)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: IE10WIN7; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 8m43s, deviation: 0s, median: 8m43s
+| nbstat: NetBIOS name: IE10WIN7, NetBIOS user: <unknown>, NetBIOS MAC: 08:00:27:ff:21:6d (Oracle VirtualBox virtual NIC)
+| Names:
+|   IE10WIN7<20>         Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   IE10WIN7<00>         Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| smb-os-discovery: 
+|   OS: Windows 7 Enterprise 7601 Service Pack 1 (Windows 7 Enterprise 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1
+|   Computer name: IE10Win7
+|   NetBIOS computer name: IE10WIN7
+|   Workgroup: WORKGROUP
+|_  System time: 2016-12-19T17:51:55-08:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smbv2-enabled: Server supports SMBv2 protocol
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.48 ms 192.168.108.15
+
+Nmap scan report for 192.168.108.88
+Host is up (0.00022s latency).
+All 1000 scanned ports on 192.168.108.88 are closed
+MAC Address: 6C:40:08:8D:EF:7E (Apple)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.22 ms 192.168.108.88
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:44
+Completed NSE at 20:44, 0.00s elapsed
+Initiating NSE at 20:44
+Completed NSE at 20:44, 0.00s elapsed
+Post-scan script results:
+| clock-skew: 
+|_  8m43s: Majority of systems scanned
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 3 IP addresses (2 hosts up) scanned in 251.57 seconds
+           Raw packets sent: 5287 (234.418KB) | Rcvd: 2393 (106.153KB)
