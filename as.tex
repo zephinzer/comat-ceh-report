@@ -9,18 +9,27 @@
 \usepackage{verbatim}
 \usepackage{url}
 
+%text variables%
+\newcommand{\myName}{OHYES SECURITY INC}
+\newcommand{\clientName}{OHNO PTE LTD}
+\newcommand{\projectCosting}{SGD\$10,748.38}
+%/text variables%
+\newcommand*{\SignatureAndDate}[1]{%
+  \par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[2.0in]{\hrulefill}%
+  \par\noindent\makebox[2.5in][l]{#1}      \hfill\makebox[2.0in][l]{Date}%
+}
 
 \setlength{\parskip}{1ex} %--skip lines between paragraphs
 \setlength{\parindent}{0pt} %--don't indent paragraphs
 
 \title{
 	Vulnerability Report for\\
-	OHNO PTE. LTD.
+	\clientName{}
 }
 \author{
 	prepared by\\
 	JOSEPH MATTHIAS GOH\\
-	OHYES SECURITY PTE. LTD.
+	\myName{}
 }
 \date{on 15/12/2016}
 \begin{document}
@@ -32,7 +41,7 @@
 \newpage
 
 \section{Executive Summary}
-OHNO PTE LTD has indicated unusual behaviour on a machine
+\clientName{} has indicated unusual behaviour on a machine
 with a Windows 7 Enterprise operating system installed. The machine
 in question is being used as a local continuous integration (CI) server
 for their primary product, Nobuty, and is used to run regression tests 24/7.\\
@@ -45,17 +54,19 @@ that the machine has been compromised by hackers. The machine has since
 been isolated together with another machine that acts as a backup. Both
 machines are on the same network.\\
 
-OHYES SECURITY has been tasked with doing a general scan of OHNO's 
+\myName{} has been tasked with doing a general scan of \clientName{}'s 
 networks and to provide recommendations on possible courses of action
 to the management team.
 
-\section{Service Agreement Overview}
-\subsection{Summary}
-OHYES SECURITY will perform an Internal Network Vulnerability Assessment
-for up to 255 local network IP addresses on a single network with the goal
-of validating suspected vulnerabilities in OHNO PTE LTD's 
-computing infrastructure. Services will be performed on-site in the 
-presence of a project manager assigned by OHNO PTE LTD.\\
+\clearpage
+\section{Security Assessment Agreement}
+\label{SecurityAssessmentAgreement}
+\subsection{Overview}
+\clientName{} has requested \myName{} to perform an Internal Network
+Vulnerability Assessment for up to 255 local network IP addresses on a
+single network with the goal of validating suspected vulnerabilities
+in \clientName{}'s  computing infrastructure. Services will be performed
+on-site in the  presence of a project manager assigned by \clientName{}.\\
 
 The engagement period was agreed to be between 12th December 2016 to 31st December 2016.
 
@@ -77,22 +88,22 @@ The engagement period was agreed to be between 12th December 2016 to 31st Decemb
 	remediations.
 }
 \item{
-	Provide Customer with a Machine Vulnerability Assessment Report.
+	Provide Client with a Machine Vulnerability Assessment Report.
 }
 \end{itemize}
-\subsection{Customer Responsibilities}
+\subsection{Client Responsibilities}
 \begin{itemize}
 \item {
 	Identify an on-site project manager to assist in coordinating 
-	Customer's resource(s).
+	Client's resource(s).
 }
 \item{
-	Provide OHYES SECURITY with access to the business site during
+	Provide \myName{} with access to the business site during
 	Standard Business Hours including buildings, parking, phone systems,
 	internet access, server rooms and workstations.
 }
 \item{
-	Provide OHYES SECURITY with access to a suitable conference room 
+	Provide \myName{} with access to a suitable conference room 
 	facility for mettings, interviews and facilitated sessions during 
 	the engagement period.
 }
@@ -102,11 +113,11 @@ The engagement period was agreed to be between 12th December 2016 to 31st Decemb
 \item{
 	Provide access to available resources related to the business
 	and technical environment including operating systems, network
-	and any computing environments necessary for OHYES SECURITY to
+	and any computing environments necessary for \myName{} to
 	complete the Services.
 }
 \item{
-	Review with OHYES SECURITY the completed Assessment Report
+	Review with \myName{} the completed Assessment Report
 }
 \item{
 	Provide sign-off for completed Machine Vulnerability Assessement
@@ -115,26 +126,30 @@ The engagement period was agreed to be between 12th December 2016 to 31st Decemb
 
 \end{itemize}
 
+\subsection{Fees}
+\clientName{} has agreed to pay \myName{} \projectCosting{} for the
+afore-describe service.
+
 \subsection{Waiver of Liability}
 \begin{itemize}
 \item{
-	Customer understands and acknowledges that where OHYES SECURITY has
+	Client understands and acknowledges that where \myName{} has
 	exercised reasonable precautions in delivering the Service, OHYES
 	SECURITY is not responsible for system outages, degradation of
 	performance or other adverse technology environment consequences of
-	tasks Customer has authorised OHYES SECURITY to perform.
+	tasks Client has authorised \myName{} to perform.
 }
 \item{
-	Customer represents and warrant that they have sufficient authroity and
-	the rights necessary for Customer to provide and/or facilitiate OHYES 
+	Client represents and warrant that they have sufficient authroity and
+	the rights necessary for Client to provide and/or facilitiate OHYES 
 	SECURITY's access to information, data, networks, systems, and media in
 	connection with these SErvices.
 }
 \item{
-	For all Customer requests under this Service Agreement that OHYES SECURITY
+	For all Client requests under this Service Agreement that \myName{}
 	posses, access, or analyze particular media, computers, computer networks,
 	communications networks, or other systems and equipment, to the extent
-	Customer provides or facilitates Cisco's access thereto. Customer
+	Client provides or facilitates Cisco's access thereto. Client
 	represents, warrants and covenants that they have all necessary right, 
 	title, license and autrhoity to make such requests and grant such access, 
 	including permissions from third-party owners of licensed or shared resources.
@@ -146,39 +161,45 @@ The engagement period was agreed to be between 12th December 2016 to 31st Decemb
 	the scope of work performed.
 }
 \item {
-	Customer acknowledges that the completion of Services is dependent upon 
-	Customer meeting its responsibilities as indicated herein.
+	Client acknowledges that the completion of Services is dependent upon 
+	Client meeting its responsibilities as indicated herein.
 }
 \item {
-	Customer will identify Customer's personnel and define their roles in the 
+	Client will identify Client's personnel and define their roles in the 
 	participation of the Services. Such personnel may include but is not limited 
 	to: architecture design and planning engineers, and network engineers.
 }
 \item {
-	Customer will ensure Customers's personnel are available to participate during 
+	Client will ensure Clients's personnel are available to participate during 
 	the course of the Services to provide information and to participate in the 
 	scheduled information gathering sessions, interviews, meetings and conference 
 	calls.
 }
 \item {
-	Customer expressly understands and agrees that support services provided by 
-	OHYES SECURITY comprise technical advice, assistance and guidance only.
+	Client expressly understands and agrees that support services provided by 
+	\myName{} comprise technical advice, assistance and guidance only.
 }
 \item {
-	Customer understands that any IP addresses not utilised during the term of 
+	Client understands that any IP addresses not utilised during the term of 
 	the Service will not result in any credit.
 }
 \item {
-	Customer expressly understands and agrees that the Services shall take place 
+	Client expressly understands and agrees that the Services shall take place 
 	and complete within fifty (50) calendar days from issuing a Purchase Order to 
-	OHYES SECURITY for the Services herin and any unused hours will expire.
+	\myName{} for the Services herin and any unused hours will expire.
 }
 \end{itemize}
 
-\subsection{Costing}
-OHNO PTE LTD has agreed to pay OHYES SECURITY SGD \$10,000.00 for the
-afore-describe service.
+\subsection{Authorization}
+We, \clientName{}, authorize \myName{} to conduct a security assessment on our
+computing infrastructure according to the terms set forth in Section \ref{SecurityAssessmentAgreement}.
 
+\vspace{.5in}
+\SignatureAndDate{\clientName{} Representative}
+\vspace{.5in}
+\SignatureAndDate{\myName{} Representative}
+
+\clearpage
 \section{Methodology}
 
 \subsection{Tools}
@@ -227,7 +248,9 @@ Related Link: https://www.tenable.com/products/nessus-vulnerability-scanner
 }
 \end{enumerate}
 
+\clearpage
 \section{Information Gathering}
+
 \subsection{Nmap Command}
 \begin{figure}[h!]
 	\fontsize{10pt}{8pt}
@@ -295,7 +318,7 @@ below in Figure 3.
 
 \subsection{Host Services}
 
-The service scan on 192.168.108.88 revealed the following host services:
+The service scan on 192.168.108.15 revealed the following host services:
 
 \begin{figure}[h!!]
 	\fontsize{8pt}{4pt}
@@ -335,7 +358,7 @@ PORT      STATE SERVICE       VERSION
 
 \subsection{Miscellaneous Information}
 The machine at 192.168.108.15 was identified with the following information which was 
-in line with data provided by OHNO PTE LTD on the affected machine.
+in line with data provided by \clientName{} on the affected machine.
 \begin{figure}[h!]
 	\fontsize{8pt}{4pt}
 	\begin{verbatim}
@@ -357,13 +380,12 @@ Service Info: Host: IE10WIN7; OS: Windows; CPE: cpe:/o:microsoft:windows
 	\caption{Device details}
 \end{figure}
 
+\clearpage
 \section{Vulnerability Scan}
+
+\subsection{Scan Configuration}
 A custom policy using all available Plugins and Compliance Checks was used because
 no information about the underlying network infrastructure has been made known to us.\\
-
-
-
-
 
 ARP, TCP and ICMP pings were used.
 
@@ -375,9 +397,43 @@ ARP, TCP and ICMP pings were used.
 \end{figure}
 
 
+\subsection{Scan Results}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=430pt]{nessus-scan-overview.jpg}
+	\caption{Host Scan Overview}
+	\label{HostScanOverview}
+\end{figure}
+
+The scan on the target as shown in Figure \ref{HostScanOverview} reveals a total of \emph{2} Critical vulnerabilities,
+\emph{28} Medium level vulnerabilities and \emph{9} Low level vulnerabilitiies.
+In Remediations on the following pages, we provide recommendations on 
+ameliorating the risk associated with these vulnerabilities.
+
+\clearpage
 \section{Remediations}
-\appendix
-\section{Appendix}
-\subsection{Service Agreement}
+
+We recommend immediate action to be taken for the following two Critical level vulnerabilities:
+
+\begin{enumerate}
+\item{OpenSSL 1.0.2 < 1.0.2i Multiple Vulnerabilities (SWEET32) on tcp/80}
+\item{OpenSSL 1.0.2 < 1.0.2i Multiple Vulnerabilities (SWEET32) on tcp/443}
+\end{enumerate}
+
+\subsection{Solution}
+This vulnerability can be resolved by upgrading OpenSSL to version 1.0.2i or later,
+which will fix both vulnerabilities that have been identified. \\
+
+Note that the GOST ciphersuites vulnerability (VulnDB 144759) is not yet
+fixed by the vendor in an official release; however, a patch for the issue
+has been committed to the OpenSSL github repository.\\
+
+We recommend that this be done as soon as possible to avoid exposing business
+critical information to potential attackers.
+
+\subsection{Description of Vulnerability}
+Critical level of this vulnerability is justified by other vulnerabilities.\\
+
+More information can be assessed at \url{https://sweet32.info/}
 
 \end{document}  
